@@ -38,18 +38,13 @@ for(var i=0; i<operator.length; i++){
         if(this.id=="clear"){
             printHistory("");
             printOutput("");
-        }
-
-        //Backspace each number
-        else if(this.id == "backspace"){
-            
+        } else if(this.id == "backspace"){//Backspace each number
             var output = reverseNumberFormat(getOutput()).toString();
             if (output){ //if output has a value
                 output = output.substr(0,output.length-1);
                 printOutput(output);
             }
-        }
-        else {
+        } else {
             var output = getOutput();
             var history = getHistory();
             if(output==""&&history!=""){
@@ -64,12 +59,11 @@ for(var i=0; i<operator.length; i++){
                     var result = eval(history);
                     printOutput(result);
                     printHistory("");
-                }else {
+                } else {
                     history=history+this.id;
                     printHistory(history);
                     printOutput("");
                 }
-
             }
         }
     })

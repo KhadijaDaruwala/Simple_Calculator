@@ -2,9 +2,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     background-color: black;
     background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(bg_img.jpg);
-
 }
-
 #calculator{
     width: 320px;
     height: 520px;
@@ -15,15 +13,12 @@ body{
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19) ;
 }
-
 #result{
     height: 120px;
 }
-
 #keyboard{
     height: 400px;
 }
-
 #history{
     text-align: right;
     height: 20px;
@@ -32,14 +27,12 @@ body{
     font-size: 15px;
     color: #919191;
 }
-
 #output{
     text-align: right;
     height: 60px;
     margin: 10px 20px;
     font-size: 30px;
 }
-
 .operator, .number, .empty {
     width: 50px;
     height: 50px;
@@ -50,19 +43,15 @@ body{
     font-weight: bold;
     font-size: 15px;
 }
-
 .number, .empty {
     background-color: #eaedef;
 }
-
 .number, .operator {
     cursor: pointer;
 }
-
 .number:active, .operator:active {
     font-size: 13px;
 }
-
 .operator:focus, .number:focus, .empty:focus{
     outline: 0;
 }
